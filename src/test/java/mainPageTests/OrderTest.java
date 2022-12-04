@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 @RunWith(Parameterized.class)
-public class OrderTests {
+public class OrderTest {
     private final By orderButton;
     private WebDriver driver;
     private final String name;
@@ -24,12 +24,12 @@ public class OrderTests {
     private final By colourScooter;
     private final String commentForCourier;
 
-    public OrderTests(By orderButton, String name,
-                      String surname, String address,
-                      By metroStation, String telephone,
-                      String whenBringScooter,
-                      By timeRent, By colourScooter,
-                      String commentForCourier) {
+    public OrderTest(By orderButton, String name,
+                     String surname, String address,
+                     By metroStation, String telephone,
+                     String whenBringScooter,
+                     By timeRent, By colourScooter,
+                     String commentForCourier) {
         this.orderButton = orderButton;
         this.name  = name ;
         this.surname = surname;
